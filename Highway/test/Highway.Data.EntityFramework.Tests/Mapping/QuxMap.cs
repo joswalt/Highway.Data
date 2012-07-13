@@ -1,8 +1,8 @@
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using Highway.Data.Tests.TestDomain;
 
-namespace Highway.Data.NHibernate.Tests.Mapping
+namespace Highway.Data.EntityFramework.Tests.Mapping
 {
     public class QuxMap : EntityTypeConfiguration<Qux>
     {

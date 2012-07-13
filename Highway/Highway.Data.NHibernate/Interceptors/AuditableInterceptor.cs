@@ -67,6 +67,7 @@ namespace Highway.Data.NHibernate.Interceptors
 //                });
 //            efContext.ChangeTracker.DetectChanges();
 //            return new InterceptorResult();
+            throw new NotImplementedException();
         }
 
         /// <summary>

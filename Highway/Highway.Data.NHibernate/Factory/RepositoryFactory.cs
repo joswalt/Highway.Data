@@ -1,4 +1,5 @@
 ﻿using System;
+using FluentNHibernate.MappingModel;
 using Highway.Data.Interfaces;
 using Highway.Data.NHibernate.Contexts;
 using Highway.Data.NHibernate.Repositories;
@@ -35,6 +36,11 @@ namespace Highway.Data.NHibernate.Factory
                                };
 
             return CreateRepository(mappings);
+        }
+
+        private IRepository CreateRepository(IMapping[] mappings)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -91,6 +97,11 @@ namespace Highway.Data.NHibernate.Factory
                                };
 
             return CreateRepository(mappings);
+        }
+
+        private IMapping GetMapping(Type p0)
+        {
+            throw new NotImplementedException();
         }
 
         private Repository CreateRepository()
